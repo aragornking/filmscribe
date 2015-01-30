@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FilmScribeFile Version="1.0" Date="Oct. 25, 2008">
+    <AssembleList>
+        <ListHead>
+            <Title>SCENE 76</Title>
+            <Tracks>V1</Tracks>
+            <EventCount>26</EventCount>
+            <OpticalCount>0</OpticalCount>
+            <DupeCount>0</DupeCount>
+            <MasterDuration>
+                <FrameCount>2394</FrameCount>
+                <Edgecode Type="35mm 4p">0149+10</Edgecode>
+                <Timecode Type="TC1">00:01:39:21</Timecode>
+            </MasterDuration>
+            <SourceDuration/>
+            <MediaFile/>
+            <VideoConform>KN Start</VideoConform>
+            <AudioConform>Aux Ink</AudioConform>
+            <LFOA>
+                <Edgecode Type="35mm 4p">0149+10</Edgecode>
+            </LFOA>
+            <EditRate>24</EditRate>
+            <Resolution>24</Resolution>
+        </ListHead>
+        <Events>
+            <Event Num="1" Type="Cut" Length="75" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:00:00</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5010+08</Edgecode>
+                        <Frame>80168</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:03:03</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5015+02</Edgecode>
+                        <Frame>80242</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4e20-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0021+06</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0026+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76/2/2</SceneTake>
+                    <Custom Name="Scene">76/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="2" Type="Cut" Length="87" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:03:04</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5015+03</Edgecode>
+                        <Frame>80243</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:06:21</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5020+09</Edgecode>
+                        <Frame>80329</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76D/1</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef4e0d-647b-0065-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1104-5220+01</Edgecode>
+                        <Pullin>B</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1104-5225+07</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000073</LabRoll>
+                    <CamRoll>124</CamRoll>
+                    <SceneTake>76D/1/1</SceneTake>
+                    <Custom Name="Scene">76D/1</Custom>
+                    <Custom Name="Take">1</Custom>
+                </Source>
+            </Event>
+            <Comment Type="Locator">
+                <Color/>
+                <Master>
+                    <Timecode Type="TC1">01:00:05:29</Timecode>
+                    <Frame>80311</Frame>
+                    <FrameImage/>
+                </Master>
+                <Source>
+                    <ClipName>76D/1</ClipName>
+                    <Timecode Type="Start TC">05:32:53:16</Timecode>
+                    <Timecode Type="Film TC">05:32:53:16</Timecode>
+                    <Timecode Type="Aux TC1">21:28:55:13</Timecode>
+                    <Timecode Type="TC24">21:28:55:11</Timecode>
+                    <Timecode Type="TC30">21:28:55:14</Timecode>
+                </Source>
+                <Text>make scene brighter
+                </Text>
+            </Comment>
+            <Event Num="3" Type="Cut" Length="305" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:06:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5020+10</Edgecode>
+                        <Frame>80330</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:19:13</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5039+10</Edgecode>
+                        <Frame>80634</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4e20-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0032+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0051+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76/2/2</SceneTake>
+                    <Custom Name="Scene">76/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Comment Type="Locator">
+                <Color/>
+                <Master>
+                    <Timecode Type="TC1">01:00:09:04</Timecode>
+                    <Frame>80387</Frame>
+                    <FrameImage/>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <Timecode Type="Start TC">03:30:15:19</Timecode>
+                    <Timecode Type="Film TC">03:30:15:19</Timecode>
+                    <Timecode Type="Aux TC1">19:10:49:17</Timecode>
+                    <Timecode Type="TC24">19:10:49:14</Timecode>
+                    <Timecode Type="TC30">19:10:49:17</Timecode>
+                </Source>
+                <Text/>
+            </Comment>
+            <Comment Type="Locator">
+                <Color/>
+                <Master>
+                    <Timecode Type="TC1">01:00:16:14</Timecode>
+                    <Frame>80563</Frame>
+                    <FrameImage/>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <Timecode Type="Start TC">03:30:22:29</Timecode>
+                    <Timecode Type="Film TC">03:30:22:29</Timecode>
+                    <Timecode Type="Aux TC1">19:10:56:27</Timecode>
+                    <Timecode Type="TC24">19:10:56:22</Timecode>
+                    <Timecode Type="TC30">19:10:56:27</Timecode>
+                </Source>
+                <Text/>
+            </Comment>
+            <Event Num="4" Type="Cut" Length="54" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:19:14</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5039+11</Edgecode>
+                        <Frame>80635</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:21:20</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5043+00</Edgecode>
+                        <Frame>80688</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6425+02</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6428+07</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="5" Type="Cut" Length="170" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:21:21</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5043+01</Edgecode>
+                        <Frame>80689</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:28:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5053+10</Edgecode>
+                        <Frame>80858</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0235+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0246+07</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="6" Type="Cut" Length="65" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:28:24</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5053+11</Edgecode>
+                        <Frame>80859</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:31:14</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5057+11</Edgecode>
+                        <Frame>80923</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6439+04</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6443+04</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="7" Type="Cut" Length="57" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:31:15</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5057+12</Edgecode>
+                        <Frame>80924</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:33:25</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5061+04</Edgecode>
+                        <Frame>80980</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0249+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0253+06</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="8" Type="Cut" Length="67" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:33:26</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5061+05</Edgecode>
+                        <Frame>80981</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:36:19</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5065+07</Edgecode>
+                        <Frame>81047</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4e20-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0073+02</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0077+04</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76/2/2</SceneTake>
+                    <Custom Name="Scene">76/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="9" Type="Cut" Length="70" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:36:20</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5065+08</Edgecode>
+                        <Frame>81048</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:39:16</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5069+13</Edgecode>
+                        <Frame>81117</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6453+06</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6457+11</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="10" Type="Cut" Length="68" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:39:18</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5069+14</Edgecode>
+                        <Frame>81118</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:42:11</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5074+01</Edgecode>
+                        <Frame>81185</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/3</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4efa-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6025+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6030+01</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76A/3/3</SceneTake>
+                    <Custom Name="Scene">76A/3</Custom>
+                    <Custom Name="Take">3</Custom>
+                </Source>
+            </Event>
+            <Event Num="11" Type="Cut" Length="61" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:42:13</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5074+02</Edgecode>
+                        <Frame>81186</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:44:28</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5077+14</Edgecode>
+                        <Frame>81246</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6462+01</Edgecode>
+                        <Pullin>B</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6465+13</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="12" Type="Cut" Length="49" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:44:29</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5077+15</Edgecode>
+                        <Frame>81247</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:46:29</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5080+15</Edgecode>
+                        <Frame>81295</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4e20-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0090+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0093+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76/2/2</SceneTake>
+                    <Custom Name="Scene">76/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="13" Type="Cut" Length="126" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:47:00</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5081+00</Edgecode>
+                        <Frame>81296</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:52:06</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5088+13</Edgecode>
+                        <Frame>81421</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0274+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0281+13</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="14" Type="Cut" Length="61" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:52:08</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5088+14</Edgecode>
+                        <Frame>81422</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:54:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5092+10</Edgecode>
+                        <Frame>81482</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6480+08</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6484+04</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="15" Type="Cut" Length="45" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:54:24</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5092+11</Edgecode>
+                        <Frame>81483</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:56:19</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5095+07</Edgecode>
+                        <Frame>81527</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76B/SERIES (MOS)</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fd34cc7-e0ca-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6236+13</Edgecode>
+                        <Pullin>B</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6239+09</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76B/SERIES (MOS)/</SceneTake>
+                    <Custom Name="Scene">76B/SERIES (MOS)</Custom>
+                </Source>
+            </Event>
+            <Event Num="16" Type="Cut" Length="51" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:56:20</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5095+08</Edgecode>
+                        <Frame>81528</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:00:58:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5098+10</Edgecode>
+                        <Frame>81578</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6489+12</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6492+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="17" Type="Cut" Length="72" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:00:58:24</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5098+11</Edgecode>
+                        <Frame>81579</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:01:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5103+02</Edgecode>
+                        <Frame>81650</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0290+09</Edgecode>
+                        <Pullin>B</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0295+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="18" Type="Cut" Length="33" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:01:24</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5103+03</Edgecode>
+                        <Frame>81651</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:03:04</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5105+03</Edgecode>
+                        <Frame>81683</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4fd4-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6493+08</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6495+08</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/2/2</SceneTake>
+                    <Custom Name="Scene">76C/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="19" Type="Cut" Length="176" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:03:05</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5105+04</Edgecode>
+                        <Frame>81684</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:10:14</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5116+03</Edgecode>
+                        <Frame>81859</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0297+02</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0308+01</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="20" Type="Cut" Length="73" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:10:15</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5116+04</Edgecode>
+                        <Frame>81860</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:13:15</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5120+12</Edgecode>
+                        <Frame>81932</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/3</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-5032-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6582+07</Edgecode>
+                        <Pullin>D</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6586+15</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/3/3</SceneTake>
+                    <Custom Name="Scene">76C/3</Custom>
+                    <Custom Name="Take">3</Custom>
+                </Source>
+            </Event>
+            <Event Num="21" Type="Cut" Length="217" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:13:16</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5120+13</Edgecode>
+                        <Frame>81933</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:22:16</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5134+05</Edgecode>
+                        <Frame>82149</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76/1</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4e1f-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 51 4246-4654+08</Edgecode>
+                        <Pullin>B</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 51 4246-4668+00</Edgecode>
+                        <Pullin>B</Pullin>
+                    </End>
+                    <LabRoll>000069</LabRoll>
+                    <CamRoll>116</CamRoll>
+                    <SceneTake>76/1/1</SceneTake>
+                    <Custom Name="Scene">76/1</Custom>
+                    <Custom Name="Take">1</Custom>
+                </Source>
+            </Event>
+            <Event Num="22" Type="Cut" Length="74" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:22:18</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5134+06</Edgecode>
+                        <Frame>82150</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:25:19</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5138+15</Edgecode>
+                        <Frame>82223</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0330+07</Edgecode>
+                        <Pullin>D</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0335+00</Edgecode>
+                        <Pullin>A</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="23" Type="Cut" Length="51" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:25:20</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5139+00</Edgecode>
+                        <Frame>82224</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:27:23</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5142+02</Edgecode>
+                        <Frame>82274</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/3</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-5032-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6605+08</Edgecode>
+                        <Pullin>A</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6608+10</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/3/3</SceneTake>
+                    <Custom Name="Scene">76C/3</Custom>
+                    <Custom Name="Take">3</Custom>
+                </Source>
+            </Event>
+            <Event Num="24" Type="Cut" Length="122" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:27:24</Timecode>
+                        <Pullin>D</Pullin>
+                        <Edgecode Type="35mm 4p">5142+03</Edgecode>
+                        <Frame>82275</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:32:25</Timecode>
+                        <Pullin>A</Pullin>
+                        <Edgecode Type="35mm 4p">5149+12</Edgecode>
+                        <Frame>82396</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0339+02</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0346+11</Edgecode>
+                        <Pullin>D</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+            <Event Num="25" Type="Cut" Length="29" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:32:26</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5149+13</Edgecode>
+                        <Frame>82397</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:34:01</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5151+09</Edgecode>
+                        <Frame>82425</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76C/1</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bc-4f86-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6387+02</Edgecode>
+                        <Pullin>C</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 27 1102-6388+14</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000072</LabRoll>
+                    <CamRoll>123</CamRoll>
+                    <SceneTake>76C/1/1</SceneTake>
+                    <Custom Name="Scene">76C/1</Custom>
+                    <Custom Name="Take">1</Custom>
+                </Source>
+            </Event>
+            <Event Num="26" Type="Cut" Length="136" SourceCount="1">
+                <Master>
+                    <Reel/>
+                    <Start>
+                        <Timecode Type="TC1">01:01:34:03</Timecode>
+                        <Pullin>C</Pullin>
+                        <Edgecode Type="35mm 4p">5151+10</Edgecode>
+                        <Frame>82426</Frame>
+                        <FrameImage/>
+                    </Start>
+                    <End>
+                        <Timecode Type="TC1">01:01:39:21</Timecode>
+                        <Pullin>B</Pullin>
+                        <Edgecode Type="35mm 4p">5160+01</Edgecode>
+                        <Frame>82561</Frame>
+                        <FrameImage/>
+                    </End>
+                </Master>
+                <Source>
+                    <ClipName>76A/2</ClipName>
+                    <MobID>060a2b340101010101010f00-13-00-00-00-{3fef36bb-4ebb-000a-060e2b347f7f2a80}</MobID>
+                    <Start>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0350+15</Edgecode>
+                        <Pullin>D</Pullin>
+                    </Start>
+                    <End>
+                        <Frame>407134</Frame>
+                        <Edgecode Type="KeyNum">EH 75 3015-0359+06</Edgecode>
+                        <Pullin>C</Pullin>
+                    </End>
+                    <LabRoll>000071</LabRoll>
+                    <CamRoll>122</CamRoll>
+                    <SceneTake>76A/2/2</SceneTake>
+                    <Custom Name="Scene">76A/2</Custom>
+                    <Custom Name="Take">2</Custom>
+                </Source>
+            </Event>
+        </Events>
+    </AssembleList>
+</FilmScribeFile>
