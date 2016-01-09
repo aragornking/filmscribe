@@ -1,17 +1,17 @@
 # The MIT License (MIT)
-# 
+#
 # Copyright (c) [2015] [Dobri Georgiev]
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,14 +20,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__author__ = 'dobri.georgiev'
-
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 from xml.sax.handler import ErrorHandler
 
 import sys
 import traceback
+
+__author__ = 'dobri.georgiev'
 
 
 class FilmscribeErrorHandler(ErrorHandler):
@@ -406,6 +406,11 @@ class FilmscribeEventMaster(object):
 
     @property
     def reel(self):
+        """
+
+
+        :return: Reel name
+        """
         return self.__reel
 
     @reel.setter
@@ -437,6 +442,22 @@ class FilmscribeEventMaster(object):
         self.__endout = value
 
 
+class FilmscribeCustomRecord(object):
+    def __init__(self):
+        self.__keys = []
+        self.__values = []
+
+    def add_key(self, value):
+        self.__keys.append(value)
+
+    def add_value(self, value):
+        self.__values.append(value)
+
+    @property
+    def data(self):
+        return dict(zip(self.__keys, self.__values))
+
+
 class FilmscribeEventSource(object):
     def __init__(self):
         self.__clip_name = None
@@ -445,7 +466,7 @@ class FilmscribeEventSource(object):
         self.__end = FilmscribeTime()
         self.__endout = None
         self.__unc = None
-        self.__custom = None
+        self.__custom = FilmscribeCustomRecord()
         self.__tape_name = None
         self.__cam_roll = None
         self.__slate = None
@@ -628,6 +649,8 @@ class FilmscribeHandler(ContentHandler):
         self.__filmscribe_file = filmscribe_file
         self.__current_list = None
         self.__xpath = []
+        self.__xpath_set = set()
+        self.__parent = None
         self.__element_text = ''
 
     def get_parent(self):
@@ -636,7 +659,7 @@ class FilmscribeHandler(ContentHandler):
         return ''
 
     def is_descendant_of(self, name):
-        return name in self.__xpath
+        return name in self.__xpath_set
 
     def handle_start(self, root, name):
         if name == 'Frame':
@@ -657,6 +680,8 @@ class FilmscribeHandler(ContentHandler):
     def startElement(self, name, attrs):
         self.__element_text = ''
         self.__xpath.append(name)
+        self.__xpath_set.add(name)
+        parent = self.get_parent()
 
         if name == 'FilmScribeFile':
             self.__filmscribe_file.date = attrs.get('Date')
@@ -684,13 +709,18 @@ class FilmscribeHandler(ContentHandler):
                 e = FilmscribeOpticalEvent(**kwargs)
                 self.__current_list.add_event(e)
 
-        if name == 'Comment' and self.get_parent() == 'Events':
+        if name == 'Comment' and parent == 'Events':
             if attrs.get('Type') == 'Locator':
                 kwargs = dict((k.lower(), v) for k, v in attrs.items())
                 e = FilmscribeLocatorEvent(**kwargs)
                 self.__current_list.add_event(e)
 
-        if self.get_parent() == 'Layer' and self.is_descendant_of('Event'):
+        if name == 'Custom' and self.is_descendant_of('Event') and parent == 'Source':
+            e = self.__current_list.events[-1]
+            if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
+                e.source.custom.add_key(attrs.get('Name'))
+
+        if parent == 'Layer' and self.is_descendant_of('Event'):
             e = self.__current_list.events[-1]
             if isinstance(e, FilmscribeOpticalEvent) and isinstance(self.__current_list, FilmscribeOpticalList):
                 kwargs = dict((k.lower(), v) for k, v in attrs.items())
@@ -699,6 +729,8 @@ class FilmscribeHandler(ContentHandler):
     def endElement(self, name):
         if name == 'FilmScribeFile':
             raise FilmscribeBreakException
+
+        parent = self.get_parent()
 
         if name == 'AssembleList':
             self.__filmscribe_file.add_assemble_list(self.__current_list)
@@ -721,129 +753,130 @@ class FilmscribeHandler(ContentHandler):
         if name == 'OpticalCount':
             self.__current_list.head.optical_count = self.__element_text
 
-        if name == 'FrameCount' and self.get_parent() == 'MasterDuration':
+        if name == 'FrameCount' and parent == 'MasterDuration':
             self.__current_list.head.master_duration.frame = int(self.__element_text)
 
-        if name == 'Edgecode' and self.get_parent() == 'MasterDuration':
+        if name == 'Edgecode' and parent == 'MasterDuration':
             self.__current_list.head.master_duration.edgecode = self.__element_text
 
-        if name == 'Timecode' and self.get_parent() == 'MasterDuration':
+        if name == 'Timecode' and parent == 'MasterDuration':
             self.__current_list.head.master_duration.timecode = self.__element_text
 
         # Master
-        # # Start
-        if self.get_parent() == 'Start' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
+        # Start
+        if parent == 'Start' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 self.handle_start(e.master, name)
 
-        # # End
-        if self.get_parent() == 'End' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
+        # End
+        if parent == 'End' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 self.handle_end(e.master, name)
 
-        # # Endout
-        if self.get_parent() == 'EndOut' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
+        # Endout
+        if parent == 'EndOut' and self.is_descendant_of('Event') and self.is_descendant_of('Master'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 if name == 'Timecode':
                     e.master.endout = self.__element_text
 
         # Source
-        # # ClipName
-        if name == 'ClipName' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # ClipName
+        if name == 'ClipName' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.clip_name = self.__element_text
 
-        # # MobID
-        if name == 'MobID' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # MobID
+        if name == 'MobID' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.mob_id = self.__element_text
 
-        # # Start
-        if self.get_parent() == 'Start' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
+        # Start
+        if parent == 'Start' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 self.handle_start(e.source, name)
 
-        ## End
-        if self.get_parent() == 'End' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
+        # End
+        if parent == 'End' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 self.handle_end(e.source, name)
 
-        ## Endout
-        if self.get_parent() == 'EndOut' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
+        # Endout
+        if parent == 'EndOut' and self.is_descendant_of('Event') and self.is_descendant_of('Source'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 if name == 'Timecode':
                     e.source.endout = self.__element_text
 
-        ## UNC
-        if name == 'UNC' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # UNC
+        if name == 'UNC' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.unc = self.__element_text
 
-        ## Custom
-        if name == 'Custom' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # Custom
+        if name == 'Custom' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
-                e.source.custom = self.__element_text
+                e.source.custom.add_value(self.__element_text)
 
-        ## TypeName
-        if name == 'TapeName' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # TypeName
+        if name == 'TapeName' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.tape_name = self.__element_text
 
-        ## CamRoll
-        if name == 'CamRoll' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # CamRoll
+        if name == 'CamRoll' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.cam_roll = self.__element_text
 
-        ## SceneTake
-        if name == 'SceneTake' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # SceneTake
+        if name == 'SceneTake' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.scene_take = self.__element_text
 
-        ## Slate
-        if name == 'Slate' and self.is_descendant_of('Event') and self.get_parent() == 'Source':
+        # Slate
+        if name == 'Slate' and self.is_descendant_of('Event') and parent == 'Source':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, (FilmscribeAssembleList, FilmscribeOpticalList)):
                 e.source.slate = self.__element_text
 
         # Comment
-        ## Master
-        if self.get_parent() == 'Master' and self.is_descendant_of('Comment'):
+        # Master
+        if parent == 'Master' and self.is_descendant_of('Comment'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, FilmscribeAssembleList):
                 self.handle_start(e.master, name)
 
-        ## Source
-        if self.get_parent() == 'Source' and self.is_descendant_of('Comment'):
+        # Source
+        if parent == 'Source' and self.is_descendant_of('Comment'):
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, FilmscribeAssembleList):
                 if name == 'ClipName':
                     e.source.clip_name = self.__element_text
 
-        ## Color
-        if name == 'Color' and self.get_parent() == 'Comment':
+        # Color
+        if name == 'Color' and parent == 'Comment':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, FilmscribeAssembleList):
                 e.color = self.__element_text
 
-        ## Text
-        if name == 'Text' and self.get_parent() == 'Comment':
+        # Text
+        if name == 'Text' and parent == 'Comment':
             e = self.__current_list.events[-1]
             if isinstance(self.__current_list, FilmscribeAssembleList):
                 e.text = self.__element_text
 
+        self.__xpath_set.remove(name)
         self.__xpath.pop()
 
     def characters(self, content):
